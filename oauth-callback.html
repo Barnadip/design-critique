@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>Design Critique sign-in</title><p>You can close this window.</p><script>
+// Host this page on an HTTPS domain listed in Supabase redirect URLs.
+// It returns the hash tokens from Supabase to the plugin popup opener.
+if (window.opener) window.opener.postMessage({ type:'design-critique-oauth', hash: location.hash }, '*');
+</script>
